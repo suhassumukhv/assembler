@@ -32,15 +32,15 @@ C DS 1
 MOV R1, &A	
 MOV R2, &B	
 MOV R3, &C	
-MOV R4, *R1	
-MOV R5, *R2	
-JMP GREAT	
-MOV *R3, R5	
-HLT		
-GREAT: MOV *R3, R4	
-HLT	
-A DC 25	
-B DC 30	
+MOV R4, *R1			
+MOV R5, *R2			
+JMP GREAT			
+MOV *R3, R5			
+HLT						
+GREAT: MOV *R3, R4				
+HLT			
+A DC 25			
+B DC 30			
 
 The equivalent machine code generated is: 	
 
