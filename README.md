@@ -85,8 +85,7 @@ or, in *hexadecimal*, it is:
 			***DC*** is used to *declare constants*
 			
 ###Documentation
-####Usage
-######Installation
+#####Installation
 On a terminal, locate to directory having *assembler* code
 ```bash
 $ mkdir build
@@ -99,20 +98,29 @@ $ file ./bin/ac
 ```
 I'd suggest installing the file
 ```
-make install
+$ make install
 ```
 To clean up the build files
 ```
-make clean
+$ make clean
 ```
 If you want to clean project build files.
 Make sure you have installed it.
 ```
-cd ..
-rm -rf build 
+$ cd ..
+$ rm -rf build 
 ```
 To uninstall.
 ```
-make uninstall
+$ make uninstall
 ```
 Works only if you haven't deleted the `build` directory. Else follow the steps again to create the `build` directory.
+<<<<<<< Updated upstream
+=======
+#####Usage
+```
+$ ac --help
+```
+Use `help` option to display all available options.
+```
+>>>>>>> Stashed changes
