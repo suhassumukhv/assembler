@@ -88,13 +88,13 @@ void print_helpbox(void)
  */
 int getOption(char* arg)
 {
-		if(!strcmpi(arg,"--help"))
+		if(!strcmp(arg,"--help"))
 			return 1;		
-		else if(!strcmpi(arg,"-h"))
+		else if(!strcmp(arg,"-h"))
 			return 2;		
-		else if(!strcmpi(arg,"-b"))
+		else if(!strcmp(arg,"-b"))
 			return 3;		
-		else if(!strcmpi(arg,"-x"))
+		else if(!strcmp(arg,"-x"))
 			return 4;		
 		else
 			return 0;
@@ -514,7 +514,7 @@ int main(int argc, char* argv[])
 		print_helpbox();
 		exit(EXIT_SUCCESS);
 	}
-	else if(option == -1 && argc ==3)
+	else if(option == -1 && argc == 3)
 	{
 		fprintf(stderr, "%s: overload.\nUse option -h for proper usage\n", PROGRAM_NAME);
 		exit(EXIT_FAILURE);

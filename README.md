@@ -115,12 +115,16 @@ To uninstall.
 $ make uninstall
 ```
 Works only if you haven't deleted the `build` directory. Else follow the steps again to create the `build` directory.
-<<<<<<< Updated upstream
-=======
 #####Usage
 ```
 $ ac --help
 ```
 Use `help` option to display all available options.
 ```
->>>>>>> Stashed changes
+$ cat > source.a.txt << DELIM
+> MOV R3, #25
+> HLT
+> DELIM
+$ ac source.a.txt	
+$ cat source.o.txt  # displays result in hexadecimal
+```
