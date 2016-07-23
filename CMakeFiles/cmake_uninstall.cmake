@@ -1,0 +1,21 @@
+message(STATUS "Checking if install file exists...")
+if(EXISTS ${CMAKE_BINARY_DIR}/install_manifest.txt)
+	message(STATUS "Install file found.")
+else()
+	message(FATAL_ERROR "Install file not found. Uninstall failed.")
+endif()
+
+file(READ ${CMAKE_BINARY_DIR}/install_manifest.txt files)
+string(REGEX REPLACE "\n" ";" files ${files})
+
+foreach(file ${files})
+	message(STATUS "Uninstalling ${file}...")
+	if(IS_SYMLINK ${file} OR EXISTS ${file})
+		execute_process(COMMAND ${CMAKE_COMMAND} -E remove -f ${file})
+		message(STATUS "Successfully uninstalled ${file}")
+	else()
+		message(STATUS "Could not uninstall ${file}")
+	endif()
+endforeach()
+
+message(STATUS "Uninstall process complete.")
