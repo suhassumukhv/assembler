@@ -3,7 +3,7 @@
 
 #define PROGRAM_NAME "assembler"
 #define PROGRAM_VERSION_MAJOR 1 
-#define PROGRAM_VERSION_MINOR 1	
+#define PROGRAM_VERSION_MINOR 1
 #define EXIT_SUCCESS 0
 #define EXIT_FAILURE 1
 #define MAX_LENGTH 100

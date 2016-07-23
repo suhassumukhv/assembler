@@ -36,7 +36,6 @@
 #include <stdbool.h>
 #include "config.h"
 
-
 /**
  * assembler uses two passes to compile
  * Creates a Symbol Table in the first pass
@@ -46,7 +45,6 @@
  * converted into hex on user request 
  *
  */ 
- 
  
 /* Struct for Symbol Table */
 struct symbolRecord
