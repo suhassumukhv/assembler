@@ -128,3 +128,4 @@ $ cat > source.a.txt << DELIM
 $ ac source.a.txt	
 $ cat source.o.txt  # displays result in hexadecimal
 ```
+Do a `man ac` to read documentation, a summary of commands and useful examples.
