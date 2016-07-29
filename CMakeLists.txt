@@ -20,4 +20,7 @@ install(TARGETS ac DESTINATION /bin)
 # target for uninstalling
 add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_SOURCE_DIR}/CMakeFiles/cmake_uninstall.cmake 
 							COMMENT "Uninstalling installed targets...")
-							
+
+# adding rule for installing man page	
+file(GLOB MANPAGE ${CMAKE_SOURCE_DIR}/doc/man/*)
+install(FILES ${MANPAGE} DESTINATION /usr/share/man/man1)
