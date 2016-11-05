@@ -89,6 +89,7 @@ or, in *hexadecimal*, it is:
 On a terminal, locate to directory having *assembler* code
 ```bash
 $ mkdir build
+$ cd build
 $ cmake ..
 $ make
 ```
@@ -98,7 +99,7 @@ $ file ./bin/ac
 ```
 I'd suggest installing the file
 ```
-$ make install
+$ sudo make install
 ```
 To clean up the build files
 ```
@@ -112,7 +113,7 @@ $ rm -rf build
 ```
 To uninstall.
 ```
-$ make uninstall
+$ sudo make uninstall
 ```
 Works only if you haven't deleted the `build` directory. Else follow the steps again to create the `build` directory.
 #####Usage
