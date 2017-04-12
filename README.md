@@ -1,5 +1,5 @@
-#assembler
-###Introduction
+# assembler
+### Introduction
 
 A hypothetical, 16 bit word architecture. There are 8 general purpose registers (R0 to R7). 
 The general Instruction format is: 
@@ -12,7 +12,7 @@ M indicates modes. There are following modes:
 01 => Register has pointer to operand	
 10 => Immediate value (stored in the next 16 bits immediately following this instruction in hexadecimal).	
 
-###Opcode table
+### Opcode table
 OPCODE |  MNEMONIC	|   USAGE
 --- | :---: | ---
 000000 |	NEG |	NEG X, Y => X = ~Y
@@ -27,7 +27,7 @@ OPCODE |  MNEMONIC	|   USAGE
 010000	| ADD |	ADD X, Y => X = Y+X
 010001	| SUB |	SUB X, Y => X = Y-X
 
-###Looking at a sample
+### Looking at a sample
 C DS 1		
 MOV R1, &A	
 MOV R2, &B	
@@ -84,8 +84,8 @@ or, in *hexadecimal*, it is:
 **Note**: ***A DS 2*** reserves 2 words of memory*(Define Storage)*, filling them all up with zeroes.	
 			***DC*** is used to *declare constants*
 			
-###Documentation
-#####Installation
+### Documentation
+##### Installation
 On a terminal, locate to directory having *assembler* code
 ```bash
 $ mkdir build
@@ -116,7 +116,7 @@ To uninstall.
 $ sudo make uninstall
 ```
 Works only if you haven't deleted the `build` directory. Else follow the steps again to create the `build` directory.
-#####Usage
+##### Usage
 ```
 $ ac --help
 ```
